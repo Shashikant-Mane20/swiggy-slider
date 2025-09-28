@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-const UNSPLASH_ACCESS_KEY = 'b0wzVD6hUaVvchUncDl_6M9rk6slt2tjTI65yELtrWs'; // Your Access Key
+const UNSPLASH_ACCESS_KEY = 'b0wzVD6hUaVvchUncDl_6M9rk6slt2tjTI65yELtrWs'; //My Unsplash API Key
 
 export default function Category() {
     const [slide, setSlide] = useState(0);
@@ -63,7 +63,7 @@ export default function Category() {
                                         {/* <img src={"http://localhost:5000/images/"+ cat.image} alt="" /> */}
 
                                         <img 
-                                        src={cat.urls.small} // Use Unsplash image URL
+                                        src={cat.urls.small} // Using Unsplash image URL
                                         alt={cat.alt_description || 'No Name'} 
                                         className='w-24 h-24 rounded-md object-cover' // Tailwind classes for image
                                     />
